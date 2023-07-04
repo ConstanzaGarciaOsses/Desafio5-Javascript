@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Enlace Boostrap para poner el estilo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap de iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title> Desafio 5 - Javascript </title>
+</head>
+
+<body>
+
+    <main class="container w-100">
+
+        <div>
+            <h2><strong>Todo List</strong></h2>
+            <hr>
+        </div>
+
+        <div>
+            <p>Nueva tarea</p>
+            <div class="d-flex">
+                <input class="me-4" id="InpuTareas" type="text">
+                <button type="button" onclick="AñadeAlArray()" class="btn btn-success"> Agregar</button>
+            </div>
+        </div>
+
+        <div class="d-flex row mt-4" >
+            <div class="col-4">
+                <p>Total: <span id="TotalTareas"><strong>0</strong></span></p>
+                <p>Realizadas: <span id="Realizadas"><strong>0</strong></span></p>
+            </div>
+
+            <div class="col-8">
+               <div class="d-flex" >
+                    <p class="col-3"><strong>ID</strong></p>
+                    <p class="col-3"><strong>Tarea</strong></p>
+                </div>
+                <div  class="flex-column" id="Quehaceres"> </div>
+            </div>
+            
+        </div>
+
+   </main>
+    
+    <style> 
+
+        main{
+            background-color: rgb(224, 223, 223);
+        }  
+
+        #InpuTareas{
+            width: 80%;
+        }
+
+        main input[type="checkbox"] {
+            width: 30px;
+            height: 30px;
+        }
+
+        #Tamaño{
+            font-size: 30px;
+            padding-left: 25px;
+        }
+
+    </style>
+
+    <script src="assets/js/Javascript.js"> </script>
+
+</body>
+
+</html>
